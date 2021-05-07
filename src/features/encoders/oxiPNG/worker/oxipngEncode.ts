@@ -81,5 +81,9 @@ export default async function encode(
   }
 
   const optimise = await wasmReady;
-  return optimise(new Uint8Array(data), options.level).buffer;
+  return optimise(
+    new Uint8Array(data),
+    options.level,
+    options.interlace ? 1 : 0,
+  ).buffer;
 }

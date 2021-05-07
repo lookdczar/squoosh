@@ -1,6 +1,6 @@
 /* tslint:disable */
 /* eslint-disable */
-export function optimise(a: number, b: number, c: number, d: number): void;
+export function optimise(a: number, b: number, c: number, d: number, e: number): void;
 export function worker_initializer(a: number): number;
 export function start_main_thread(): void;
 export function start_worker_thread(): void;

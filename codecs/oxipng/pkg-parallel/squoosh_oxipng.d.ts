@@ -3,9 +3,10 @@
 /**
 * @param {Uint8Array} data
 * @param {number} level
+* @param {number} interlace
 * @returns {Uint8Array}
 */
-export function optimise(data: Uint8Array, level: number): Uint8Array;
+export function optimise(data: Uint8Array, level: number, interlace: number): Uint8Array;
 /**
 * @param {number} num
 * @returns {any}
@@ -21,7 +22,7 @@ export function start_worker_thread(): void;
 export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembly.Module;
 
 export interface InitOutput {
-  readonly optimise: (a: number, b: number, c: number, d: number) => void;
+  readonly optimise: (a: number, b: number, c: number, d: number, e: number) => void;
   readonly worker_initializer: (a: number) => number;
   readonly start_main_thread: () => void;
   readonly start_worker_thread: () => void;
