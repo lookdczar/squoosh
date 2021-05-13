@@ -1,3 +1,19 @@
+# 本地安装方法
+
+```
+cd cli
+npm install
+npm install rollup -g
+npm run build
+
+#安装后用命令行运行
+npm i -g
+
+#直接运行
+node build/index --mozjpeg '{"quality":60}' -d /workspace/squoosh/test/out /workspace/squoosh/test/img2.jpg
+
+```
+
 # Squoosh CLI
 
 Squoosh CLI is an _experimental_ way to run all the codecs you know from the [Squoosh] web app on your command line using WebAssembly. The Squoosh CLI uses a worker pool to parallelize processing images. This way you can apply the same codec to many images at once.
